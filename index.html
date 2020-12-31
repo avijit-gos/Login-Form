@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<!------ Bootstrap CDN Link ------->
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <!------ Font Links ---------->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital@1&display=swap" rel="stylesheet">
+
+    <!------------ CSS Link --------------->
+    <link rel="stylesheet" type="text/css" href="Login-Page.css">
+
+    <!---------- Font Icon Link ------------>
+    <link rel="stylesheet" href="css/all.min.css">
+</head>
+<body>
+	<div class="container">
+		<div class="row" id="main_box">
+		    <div class="col-sm-5"id="box1">
+		    	<img src="im1.jpg" class="image">
+		    	<div class="box1_text">
+		    		<p class="header">Lorem</p>
+		    		<p class="text">
+		    			Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+		    			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+		    			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+		    			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+		    			cillum dolore eu fugiat nulla pariatur.
+		    		</p>
+		    	</div>
+		    </div>
+
+		    <div class="col-sm-5"id="box2">
+		    	<p class="box2_header">Login Form</p>
+		    	<form onsubmit="Validation();return false; ">
+
+		    		<!----------First  Name ----------->
+		    		<div class="input-group mb-3">
+		    			<div class="input-group-prepend">
+		    				<span class="input-group-text">
+		    					<i class="fas fa-user"></i>
+		    				</span>
+		    			</div>
+		    			<input type="text" class="form-control" placeholder="Enter Your Name" name="fname" id="fname" data-toggle="tooltip" data-placement="right" title="Ex: Peter Dark">
+                        <label id="lbl_Name"></label>
+		    		</div>
+                    
+		    		<!---------- Email -------------->
+		    		<div class="input-group mb-3">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text">
+                        	        <i class="fas fa-envelope"></i>
+                            </span>
+                        </div>
+                    <input type="email" class="form-control" placeholder="Enter Your Email" name="email" id="email" data-toggle="tooltip" data-placement="right" title="Ex: peterDark12@gmail.com">
+                    </div>
+
+                    <!----------- Password ---------------->
+                    <div class="input-group mb-3">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text">
+                        	   <i class="fas fa-lock"></i>
+                            </span>
+                        </div>
+                    <input type="password" class="form-control" placeholder="Enter Your Password" name="password" id="password" data-toggle="tooltip" data-placement="right" title="Ex: Peter_Dark123">
+                    </div>
+
+                    <!----------- Confirm Password ---------------->
+                    <div class="input-group mb-3">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text">
+                               <i class="fas fa-lock"></i>
+                            </span>
+                        </div>
+                    <input type="password" class="form-control" placeholder="Confirm Password" name="password" id="Cpassword">
+                    </div>
+
+                    <!----------- Number -------------->
+                    <div class="input-group mb-3">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text">
+                        	    <i class="fas fa-phone-alt"></i>
+                            </span>
+                        </div>
+                    <input type="number" class="form-control" placeholder="Enter Your Phone Number" name="number"  id="number" data-toggle="tooltip" data-placement="right" title="Ex: 0123654789">
+                    </div>
+
+                    <!---------- DOB -------------->
+                    <div class="input-group mb-3">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text">
+                        	    <i class="fas fa-calendar-alt"></i>
+                            </span>
+                        </div>
+                    <input type="date" class="form-control" placeholder="Enter Your DOB" name="date">
+                    </div>
+
+                    <!--------- Submit Button ----------->
+                    <button type="submit" class="btn btn-block btn-primary"  data-toggle="tooltip" data-placement="bottom">Create your Account</button>
+		    	</form>
+
+		    	<!-------- Social Media Icons ----------->
+		    	<div class="social_media">
+		    		<p class="social_text">You can signup with</p>
+		    		<div class="social_media_icons" style="text-align: center;">
+		    			<button class="btn btn-sm button" id="facebook"  data-toggle="tooltip" data-placement="bottom" title="Facebook">
+                            <i class="fab fa-facebook-f"></i>
+                        </button>
+					   
+                        <button class="btn btn-sm button" id="google" data-toggle="tooltip" data-placement="top" title="Google+">
+                            <i class="fab fa-google-plus-g"></i>
+                        </button>
+					   
+                        <button class="btn btn-sm button" id="twitter" data-toggle="tooltip" data-placement="bottom" title="Twitter">
+                            <i class="fab fa-twitter"></i>
+                        </button>
+					    
+                        <button class="btn btn-sm button" id="insta" data-toggle="tooltip" data-placement="top" title="Instagram">
+                            <i class="fab fa-instagram"></i>
+                        </button>
+					    
+                        <button class="btn btn-sm button" id="youtube" data-toggle="tooltip" data-placement="bottom" title="Youtube">
+                            <i class="fab fa-youtube"></i>
+                        </button>
+		    		</div>
+		    	</div>
+
+		    	<p class="signin_text">Already Registered?<a href="#">Sign In</a></p>
+		    </div>
+	    </div>
+	</div>
+
+
+    <!------------- JavaScript Link ----------------->
+	<script type="text/javascript" src="Login-Page.js"></script>
+</body>
+</html>

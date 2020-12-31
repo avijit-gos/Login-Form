@@ -1,0 +1,126 @@
+*{
+	box-sizing: border-box;
+	position: relative;
+}
+
+.svg1 {
+	position: absolute;
+	bottom: 0;
+}
+.container {
+	position: relative;
+}
+
+#box1 {
+	margin-top: 50px;
+}
+.image {
+	width: 100%;
+	height: auto
+}
+.header {
+	text-align: center;
+	letter-spacing: 5px;
+	font-family: 'Open Sans', sans-serif;
+	padding-top: 10px;
+	font-size: 28px;
+	color: #eb4d4b;
+	font-weight: bold;
+}
+
+.text {
+	font-family: 'Yellowtail', cursive;
+	color: #4834d4;
+	font-size: 14px;
+}
+
+#box2 {
+	margin-left: 30px;
+	margin-top: 50px;
+}
+
+.box2_header {
+	text-align: center;
+	letter-spacing: 7px;
+	color: #eb4d4b;
+	font-size: 25px;
+}
+
+.social_media {
+	margin-top: 45px;
+	font-weight: bold;
+	font-family: 'Redressed', cursive;
+	color: #3867d6
+}
+
+.button {
+	width: 40px;
+	height: 40px;
+	margin-left: 10px;
+	border-radius: 50%;
+}
+
+#facebook {
+	background-color: #3B5998;
+	color: white;
+	transform: rotate(0) scale(1);
+	transition: 0.5s ease;
+}
+#facebook:hover{
+	transform: rotate(360deg) scale(1.09);
+}
+
+#google {
+	background-color: #DB4437;
+	color: white;
+	transform: rotate(0) scale(1);
+	transition: 0.5s ease;
+}
+#google:hover{
+	transform: rotate(360deg) scale(1.09);
+}
+
+
+#twitter {
+	background-color: #08a0e9;
+	color: white;
+	transform: rotate(0) scale(1);
+	transition: 0.5s ease;
+}
+#twitter:hover{
+	transform: rotate(360deg) scale(1.09);
+}
+
+#insta {
+	background: #833ab4;
+    background: -webkit-linear-gradient(to right, #fcb045, #fd1d1d, #833ab4);
+    background: linear-gradient(to right, #fcb045, #fd1d1d, #833ab4);
+	color: white;
+	transform: rotate(0) scale(1);
+	transition: 0.5s ease;
+}
+#insta:hover{
+	transform: rotate(360deg) scale(1.09);
+}
+
+#youtube {
+	background-color: #E62117;
+	color: white;
+	transform: rotate(0) scale(1);
+	transition: 0.5s ease;
+}
+#youtube:hover{
+	transform: rotate(360deg) scale(1.09);
+}
+
+.signin_text {
+	margin-top: 30px;
+	text-decoration: none;
+}
+a{
+	font-weight: bold;
+	letter-spacing: 2px;
+	text-decoration: none;
+	color: #474787
+}
+
